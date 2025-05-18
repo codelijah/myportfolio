@@ -715,17 +715,21 @@ button:hover {
 
 footer {
     background-color: #1A1A28;
-    text-align: center;
     padding: 20px;
+    text-align: center;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .social-img2 img{
     width: 35px;
     padding-left: 4px;
-}
-
-.social-img2 {
-    margin-top: 20px;
 }
 
 .social-img2 a:nth-child(1) img{
@@ -753,7 +757,6 @@ footer {
 .footer-name {
     color: #00FFFF;
     font-size: 40px;
-    margin-bottom: 20px;
 }
 
 @media (max-width: 1250px) {
@@ -794,7 +797,7 @@ footer {
         height: 2px;
     }
 
-    nav ul a:hover {
+    .nav ul a:hover {
         background: none;
     }
 
@@ -816,11 +819,11 @@ footer {
         backdrop-filter: blur(10px)
     }
 
-    nav.active {
+    .nav.active {
         left: 0;
     }
     
-    nav ul {
+    .nav ul {
         text-align: center;
         margin-top: 120px;
     }
@@ -856,11 +859,6 @@ footer {
 
     .header-container {
         padding: 0;
-   
-    }
-
-    .intro-div {
-        /* padding: 295px 0px 167px; */
     }
 
     .intro h1 {
@@ -880,7 +878,6 @@ footer {
         flex-direction: column;
         gap: 0;
     }
-
 
     .get-in-touch-flex {
         flex-direction: column;

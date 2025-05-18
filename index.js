@@ -112,3 +112,10 @@ menu.onclick = function() {
   menu = document.querySelector(".menu");
   menu.classList.toggle("active")
 }
+
+document.querySelectorAll(".nav ul li a").forEach(link => {
+    link.addEventListener("click", () => {
+        document.querySelector(".nav").classList.remove("active");
+        document.querySelector(".menu").classList.remove("active"); // Also resets the menu button state
+    });
+});
