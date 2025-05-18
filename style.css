@@ -19,6 +19,7 @@ html {
     align-items: center;
     width: 100%;
     margin: auto;
+    padding: 0 20px;
     position: fixed;
     top: 0px;
     z-index: 1000;
@@ -28,7 +29,8 @@ html {
 }
 
 .header-container {
-    max-width: 1150px;
+    max-width: 1170px;
+    padding: 0 20px;
     margin: auto;
     width: 100%;
     display: flex;
@@ -41,14 +43,13 @@ html {
 }
 
 .header h1 {
-    font-size: 40px;
+    font-size: 35px;
+    cursor: pointer;
 }
 
 .header.scrolled {
-    background: rgba(18, 18, 30, 0.7);
-    backdrop-filter: blur(5px)
+    background: rgba(18, 18, 30, 0.9);
 }
-
 
 .styled-name {
     font-size: 35px;
@@ -60,7 +61,7 @@ html {
 
 .nav ul li a {
     color: #fff;
-    padding: 25px 20px;
+    padding-left: 30px;
     font-size: 18px;
     font-weight: 500;
     transition: all 0.3s ease-in-out;
@@ -79,8 +80,9 @@ html {
 }
 
 .max-width {
-    max-width: 1150px;
+    max-width: 1170px;
     margin: auto;
+    padding: 0 20px;
 }
 
 .head {
@@ -94,14 +96,16 @@ html {
 
 
 .intro-div {
-    padding: 400px 0px 240px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .intro h1 {
     font-size: 70px;
     padding: 5px 0;
 }
-
 
 .intro p:nth-child(1) {
     font-size: 27px;
@@ -113,7 +117,7 @@ html {
 
 .intro p:nth-child(3) {
     font-size: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
 }
 
 /* typing effect */
@@ -143,7 +147,7 @@ html {
 }
 
 .social-img{
-    margin-top: 120px;
+    margin-top: 6.25rem;
 }
 
 .social-img img{
@@ -693,7 +697,6 @@ textarea {
 
 button {
     display: block;
-    /* width: 100%; */
     margin-top: 15px;
     padding: 10px 15px;
     background-color: #00ffffcb;
@@ -849,6 +852,15 @@ footer {
     .menu.active .menu-line:nth-child(3) {
         transform: translateY(-3.5px) rotate(-45deg);
         transition: 0.5s;
+    }
+
+    .header-container {
+        padding: 0;
+   
+    }
+
+    .intro-div {
+        /* padding: 295px 0px 167px; */
     }
 
     .intro h1 {

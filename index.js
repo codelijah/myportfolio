@@ -91,8 +91,11 @@ startAutoSlide();
 showSlides();
 
 // Pause auto-slide when hovering over projects
-document.querySelector(".slide").addEventListener("mouseenter", stopAutoSlide);
-document.querySelector(".slide").addEventListener("mouseleave", startAutoSlide);
+document.querySelectorAll(".slide").forEach(slide => {
+    slide.addEventListener("mouseenter", stopAutoSlide);
+    slide.addEventListener("mouseleave", startAutoSlide);
+});
+
 
 // redirect code to thankyou.html  
 document.querySelector("form").addEventListener("submit", function (event) {
