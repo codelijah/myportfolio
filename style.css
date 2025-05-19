@@ -42,17 +42,13 @@ html {
     display: none;
 }
 
-.header h1 {
-    font-size: 35px;
-    cursor: pointer;
-}
-
 .header.scrolled {
-    background: rgba(18, 18, 30, 0.9);
+    background: #12121E;
 }
 
 .styled-name {
     font-size: 35px;
+    cursor: pointer;
 }
 
 .styled-name span {
@@ -89,6 +85,7 @@ html {
     background-image: url(images/bgimg.jpeg);
     color: #fff;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
@@ -175,7 +172,7 @@ html {
     /* flex-grow: 1; */
     width: 40px;
     height: 3px;
-    background-color: #00FFFF; 
+    background-color: #00ffffcb; 
     margin-top: 5px;
 }
 
@@ -228,7 +225,7 @@ html {
     object-fit: cover;
     width: 350px;
     border-radius: 10px;
-    border: 3px solid #00FFFF;
+    border: 3px solid #00ffffcb;
 }
 
 .hire a:nth-child(1) {
@@ -249,7 +246,7 @@ html {
 
 .hire a:nth-child(2) {
     padding: 15px 45px;
-    color: #00FFFF;
+    color: #00ffffcb;
     border-radius: 5px;
     font-weight: 500;
     display: inline-block;
@@ -280,7 +277,7 @@ html {
     /* flex-grow: 1; */
     width: 35px;
     height: 3px;
-    background-color: #00FFFF; 
+    background-color: #00ffffcb; 
 }
 
 .sideline-text1 {
@@ -299,7 +296,7 @@ html {
 .line2 {
     width: 30px;
     height: 3px;
-    background-color: #00FFFF; 
+    background-color: #00ffffcb; 
     margin-top: 5px;
 }
 
@@ -333,8 +330,7 @@ html {
 
 .myservices-div {
     padding: 40px 30px 20px;
-    box-shadow: 4px 4px 10px rgba(0, 163, 163, 0.5);
-    /* box-shadow: 1px 1px 10px #00ffffcb; */
+    border: 1px solid #00ffffcb;
     border-radius: 10px;
     margin-bottom: 40px;
     flex: 1;
@@ -372,7 +368,7 @@ html {
 .line3 {
     width: 35px;
     height: 3px;
-    background-color: #00FFFF; 
+    background-color: #00ffffcb; 
     margin-top: 5px;
 }
 
@@ -442,19 +438,19 @@ html {
 
 .skills-div .skill:nth-child(1) .progress-bar {
     height: 5px;
-    background-color: #00FFFF;
+    background-color: #00ffffcb;
     width: 95%;
 }
 
 .skills-div .skill:nth-child(2) .progress-bar {
     height: 5px;
-    background-color: #00FFFF;
+    background-color: #00ffffcb;
     width: 85%;
 }
 
 .skills-div .skill:nth-child(3) .progress-bar {
     height: 5px;
-    background-color: #00FFFF;
+    background-color: #00ffffcb;
     width: 70%;
 }
 
@@ -471,7 +467,7 @@ html {
 .line4 {
     width: 30px;
     height: 3px;
-    background-color: #00FFFF; 
+    background-color: #00ffffcb; 
     margin-top: 5px;
 }
 
@@ -520,7 +516,7 @@ html {
 .slide img {
     width: 75%;
     border-radius: 2%;
-    border: 1px solid #00FFFF;
+    border: 1px solid #00ffffcb;
     margin-top: 30px;
 }
 
@@ -549,7 +545,7 @@ html {
 .projects-div a {
     display: inline-block;
     text-decoration: none;
-    color: #00FFFF;
+    color: #00ffffcb;
     padding: 10px 33px;
     border-radius: 5px;
     border: 1px solid #00FFFF;
@@ -580,15 +576,15 @@ html {
     margin: 5px;
     cursor: pointer;
     transition: all 0.3s ease-in-out; 
-    border: 1px solid #00FFFF;
+    border: 1px solid #00ffffcb;
 }
 
 .dot:hover {
-    background-color: #00FFFF;
+    background-color: #00ffffcb;
 }
 
 .dot.active {
-    background-color: #00FFFF;
+    background-color: #00ffffcb;
     width: 30px;
 }
 
@@ -628,12 +624,12 @@ html {
 }
 
 .get-in-touch span {
-    color: #00FFFF;
+    color: #00ffffcb;
 }
 
 .contact-icon p:nth-child(1) {
     font-weight: 500;
-    color: #00FFFF;
+    color: #00ffffcb;
 }
 
 .message {
@@ -664,7 +660,7 @@ html {
 }
 
 .message span {
-    color: #00FFFF;
+    color: #00ffffcb;
 }
 
 form {
@@ -725,15 +721,16 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding-bottom: 20px;
 }
 
 .social-img2 img{
-    width: 35px;
+    width: 30px;
     padding-left: 4px;
 }
 
 .social-img2 a:nth-child(1) img{
-    width: 31px;
+    width: 29px;
 }
 
 .nav2 ul li {
@@ -755,8 +752,14 @@ footer {
 }
 
 .footer-name {
-    color: #00FFFF;
+    color: #00ffffcb;
     font-size: 40px;
+}
+
+.footer-bottom p {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 @media (max-width: 1250px) {
@@ -808,7 +811,7 @@ footer {
         top: 0;
         right: 0;
         left: -100%;
-        background: rgba(18, 18, 30, 0.7);
+        background: #12121E;
         transition: 0.5s;
         overflow: hidden;
         width: 100%;
@@ -816,7 +819,6 @@ footer {
         z-index: 100;
         height: 100vh;
         transition: left 0.5s ease-in-out;
-        backdrop-filter: blur(10px)
     }
 
     .nav.active {
@@ -883,6 +885,35 @@ footer {
         flex-direction: column;
         gap: 30px;
     }
+
+    .sideline1 {
+        width: 25px;
+    }
+
+    .sideline-text1 {
+        font-size: 35px;
+    
+    }
+
+    .social-img img{
+        width: 38px;
+    }
+
+    .social-img a:nth-child(1) img{
+        width: 36px;
+    }
+
+    .about-div h2, .services-div h2, .myskills-div h2, .myproject-work h2 {
+        font-size: 35px;
+    }
+
+    .message h1 {
+        font-size: 30px;
+    }
+
+    .footer-name {
+        font-size: 35px;
+    }
 }
 
 @media (max-width: 690px) {
@@ -901,6 +932,7 @@ footer {
     .nav2 ul li a {
         padding: 0 15px;
     }
+    
 }
 
 @media (max-width: 500px) {
