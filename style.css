@@ -169,7 +169,6 @@ html {
 }
 
 .line {
-    /* flex-grow: 1; */
     width: 40px;
     height: 3px;
     background-color: #00ffffcb; 
@@ -274,7 +273,6 @@ html {
 }
 
 .sideline1 {
-    /* flex-grow: 1; */
     width: 35px;
     height: 3px;
     background-color: #00ffffcb; 
