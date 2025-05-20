@@ -697,6 +697,7 @@ button {
     padding: 10px 15px;
     background-color: #00ffffcb;
     color: white;
+    border: none;
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
