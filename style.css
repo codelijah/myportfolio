@@ -893,7 +893,6 @@ footer {
 
     .sideline-text1 {
         font-size: 35px;
-    
     }
 
     .social-img img{
@@ -933,7 +932,50 @@ footer {
     .nav2 ul li a {
         padding: 0 15px;
     }
-    
+
+    .sideline1 {
+        width: 20px;
+    }
+
+    .sideline-text1 {
+        font-size: 30px;
+    }
+
+    .social-img img{
+        width: 35px;
+    }
+
+    .social-img a:nth-child(1) img{
+        width: 34px;
+    }
+
+    .about-div h2, .services-div h2, .myskills-div h2, .myproject-work h2 {
+        font-size: 30px;
+    }
+
+    .message h1 {
+        font-size: 28px;
+    }
+
+    .get-in-touch h2  {
+        font-size: 22px;
+    }
+
+    .line, .line3 {
+        width: 30px;
+        height: 2.5px;
+    }
+
+    .line-text, .line-text2, .line-text3, .line-text4 {
+        font-size: 18px;
+    }
+
+    .line2, .line4 {
+        width: 25px;
+        height: 2.5px;
+    }
+
+
 }
 
 @media (max-width: 500px) {
