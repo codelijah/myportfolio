@@ -119,3 +119,12 @@ document.querySelectorAll(".nav ul li a").forEach(link => {
         document.querySelector(".menu").classList.remove("active"); // Also resets the menu button state
     });
 });
+
+// Hide loader after page loads
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("container").style.display = "block";
+            }, 8000); // Wait for the full animation (10s)
+        });
+
