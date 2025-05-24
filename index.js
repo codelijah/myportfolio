@@ -121,10 +121,48 @@ document.querySelectorAll(".nav ul li a").forEach(link => {
 });
 
 // Hide loader after page loads
-        window.addEventListener("load", function () {
-            setTimeout(function () {
-                document.getElementById("loader").style.display = "none";
-                document.getElementById("container").style.display = "block";
-            }, 8000); // Wait for the full animation (10s)
-        });
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("container").style.display = "block";
+    }, 7400); // Wait for the full animation (10s)
+});
 
+// skills percentage loading code 
+document.addEventListener("DOMContentLoaded", function () {
+    const progressBars = document.querySelectorAll(".progress-bar");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    const percentage = entry.target.getAttribute("data-width");
+                    entry.target.style.width = percentage;
+                    entry.target.style.transition = "width 4s ease-in-out"; 
+                }, index * 500); // Adds a slight delay per skill
+            }
+        });
+    }, { threshold: 0.5 });
+
+    progressBars.forEach(bar => {
+        observer.observe(bar);
+    });
+});
+
+// services code slide effect 
+document.addEventListener("DOMContentLoaded", function () {
+    const serviceItems = document.querySelectorAll(".myservices-div");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                entry.target.classList.add(index % 2 === 0 ? "slide-left" : "slide-right"); // Alternates left and right
+            }
+        });
+    }, { threshold: 0.5 });
+
+    serviceItems.forEach(item => {
+        observer.observe(item);
+    });
+});
