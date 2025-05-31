@@ -125,7 +125,7 @@ window.addEventListener("load", function () {
     setTimeout(function () {
         document.getElementById("loader").style.display = "none";
         document.getElementById("container").style.display = "block";
-    }, 7400); // Wait for the full animation (10s)
+    }, 1500); // Wait for the full animation (10s)
 });
 
 // skills percentage loading code 
